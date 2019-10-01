@@ -8,9 +8,9 @@ Project end         : 10/20/2019
 ## Timeline in process
 
 [x] first sync project with github.
+
 []  ...
+
 []  ...
+
 []  final push project.
-
-
-
