@@ -8,10 +8,15 @@ Project end         : 10/20/2019
 
 ## Timeline in process
 
+
+### day 1
 [x] first sync project with github.
 
-[]  ...
+[]  create main-BG.
 
-[]  ...
+[]  build 2 component (block and buttom).
 
-[]  final push project.
+[]  create loggin block.
+
+
+
