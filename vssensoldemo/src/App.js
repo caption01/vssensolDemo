@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
+import MainBackground from './components/MainBackground/MainBackground.js'
 
 
+class App extends Component {
 
-function App() {
-  return (
-    <div> start app </div>
-  );
+
+  render(){
+    return(
+      <div>
+        <MainBackground />
+      </div>
+    )
+  }
+
 }
+
 
 export default App;
