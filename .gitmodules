@@ -1,0 +1,3 @@
+[submodule "vanta"]
+	path = vanta
+	url = https://github.com/tengbao/vanta.git
