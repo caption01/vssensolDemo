@@ -12,11 +12,15 @@ Project end         : 10/20/2019
 ### day 1
 [x] first sync project with github.
 
-[]  create main-BG.
+[x] create scrach
 
-[]  build 2 component (block and buttom).
 
-[]  create loggin block.
+### day 2
+[x]  create main-BG.
+
+[x]  build 2 component (block and buttom).
+
+[x]  create loggin block.
 
 
 
