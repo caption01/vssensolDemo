@@ -23,4 +23,10 @@ Project end         : 10/20/2019
 
 ### day 3
 
+[x] create register form.
+
+[]  fix register form - background.
+
+[]  set route change stage.
+
 
