@@ -14,7 +14,6 @@ Project end         : 10/20/2019
 
 [x] create scrach
 
-
 ### day 2
 [x]  create main-BG.
 
@@ -22,5 +21,6 @@ Project end         : 10/20/2019
 
 [x]  create loggin block.
 
+### day 3
 
 

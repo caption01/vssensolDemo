@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Divider, Form, Grid, Segment } from 'semantic-ui-react'
+import { Button, Divider, Form, Grid, Segment, Popup } from 'semantic-ui-react'
 
 const LogInBlock = () => {
   
@@ -22,12 +22,33 @@ const LogInBlock = () => {
                 type='password'
               />
 
-              <Button content='Login' primary />
+              <Button content='Login' basic color='grey' />
             </Form>
           </Grid.Column>
 
           <Grid.Column verticalAlign='middle'>
-            <Button content='Sign up' icon='signup' size='big' />
+            <Popup wide trigger={<Button content='visitor' icon='user outline' />} on='click'>
+              <Grid divided columns='equal'>
+                <Grid.Column>
+                  <Popup
+                    trigger={<Button basic color='grey' content='go inside' fluid />}
+                    content='Look our business'
+                    position='top center'
+                    size='tiny'
+                    inverted
+                  />
+                </Grid.Column>
+                <Grid.Column>
+                  <Popup
+                    trigger={<Button basic color='grey' content='register' fluid />}
+                    content='Be partner'
+                    position='top center'
+                    size='tiny'
+                    inverted
+                  />
+                </Grid.Column>
+              </Grid>
+            </Popup>
           </Grid.Column>
         </Grid>
 
