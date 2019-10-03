@@ -31,7 +31,7 @@ class App extends Component {
 
                   case "logined":   
                   return (
-                    <HomePage />
+                    <HomePage onRouteChange={this.onRouteChange} />
                   )
 
                   case "register": 
@@ -41,7 +41,7 @@ class App extends Component {
 
                   case "home":  
                   return (
-                    <HomePage />
+                    <HomePage onRouteChange={this.onRouteChange} />
                   )
 
                   default:      
