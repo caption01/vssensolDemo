@@ -27,6 +27,8 @@ Project end         : 10/20/2019
 
 []  fix register form - background.
 
-[]  set route change stage.
+[x]  set route change stage.
+
+[]  create home page.
 
 

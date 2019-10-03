@@ -1,7 +1,7 @@
 import React from 'react'
 import { Form, Container, Button, Icon } from 'semantic-ui-react'
 
-const RegisterForm = () => {
+const RegisterForm = ({onRouteChange}) => {
 
     return (
         <Container style={{"width": "50%", "marginTop": "10%"}}>
@@ -18,11 +18,11 @@ const RegisterForm = () => {
                     <Form.Input label='Password' placeholder='Last Name' width={8} type='password' />
                 </Form.Group>
                 <Form.Group style={{"justifyContent": "center"}}>
-                    <Button icon labelPosition='left'>
+                    <Button onClick={() => onRouteChange('login')} icon labelPosition='left'>
                     <Icon name='left arrow' />
                     Cancel
                     </Button>
-                    <Button icon labelPosition='right'>
+                    <Button onClick={() => onRouteChange('login')} icon labelPosition='right'>
                     Submit
                     <Icon name='right arrow' />
                     </Button>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import MainBackground from './components/MainBackground/MainBackground.js'
 import LogInBlock from './components/LogInBlock/LogInBlock.js'
+import HomePage from './components/HomePage/HomePage.js'
 import RegisterForm from './components/RegisterForm/RegisterForm.js'
 import 'semantic-ui/dist/semantic.min.css';
 
@@ -9,8 +10,13 @@ class App extends Component {
   constructor(){
     super()
     this.state = {
-        route: 'login'
+        route: '',
+        isLogIn: false
     }
+  }
+
+  onRouteChange = (route) => {
+    this.setState({route: route})
   }
 
   render(){
@@ -18,20 +24,37 @@ class App extends Component {
     return(
       <div className="App">
         <MainBackground />
-        {
-          this.state.route === 'login'
-          ? (
-              <LogInBlock />
-            )  
-          : (
-              <RegisterForm />
+          {
+            (
+              () => {
+                switch (this.state.route) {
+
+                  case "logined":   
+                  return (
+                    <HomePage />
+                  )
+
+                  case "register": 
+                  return (
+                    <RegisterForm onRouteChange={this.onRouteChange} />
+                  )
+
+                  case "home":  
+                  return (
+                    <HomePage />
+                  )
+
+                  default:      
+                  return (
+                    <LogInBlock isLogIn={this.state.isLogIn} onRouteChange={this.onRouteChange} />
+                  )
+                }
+              }
             )
-        }
+          ()}
       </div>
     )
-
   }
-
 }
 
 

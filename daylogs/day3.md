@@ -6,7 +6,7 @@
 
 [x] create register form.
 
-[]  set route stage into button.
+[x]  set route stage into button.
 
 []  fix background register form.
 
