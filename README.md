@@ -29,6 +29,6 @@ Project end         : 10/20/2019
 
 [x]  set route change stage.
 
-[]  create home page.
+[x]  create menu-bar home page.
 
 
