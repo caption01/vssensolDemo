@@ -31,4 +31,13 @@ Project end         : 10/20/2019
 
 [x]  create menu-bar home page.
 
+### day 4
+
+[x] free day.
+
+### day 5
+
+
+
+
 
